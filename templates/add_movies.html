@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD</title>
+</head>
+<body>
+<form method="POST">
+        <h3>Добавление фильма</h3>
+        <label >Введите название фильма</label><br>
+        <input type="text" name="title" value="" required><br>
+
+        <label >Введите год выпуска</label><br>
+        <input type="text" name="year" value="" required><br>
+
+        <label >Введите жанр</label><br>
+        <input type="text" list="list" name="genre"><br>
+        <datalist id="list">
+                <option value="ужасы">
+                <option value="боевик">
+                <option value="комедия">
+        </datalist>
+
+        <label >Введите рейтинг</label><br>
+        <input type="number" name="rating" value="" required><br>
+        <hr>
+
+        <h3>Добавление актера</h3>
+
+        <label >Введите имя актера</label><br>
+        <input type="text" name="name" value="" required><br>
+
+        <label >Введите фамилию актера</label><br>
+        <input type="text" name="surname" value="" required><br>
+
+        <label >Введите год рождения актера</label><br>
+        <input type="text" name="year" value="" required><br>
+
+        <input type="submit" value="Отправить">
+</form>
+
+<a type="button" href="/movies">Каталог фильмов</a>
+
+</body>
+</html>

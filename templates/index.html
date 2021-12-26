@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<ul>
+    {% for items in data %}
+    <li><p>Название фильма: {{ items.title }}</p></li>
+    <ul>
+        <li>Год выпуска: {{ items.year }}</li>
+        <li>Жанр фильма: {{ items.genre }}</li>
+        <li>Рейтинг фильма: {{ items.rating }}</li>
+        <li>Актер: {{ items.actor_surname }}</li>
+    </ul>
+    {% endfor %}
+</ul>
+<a type="button" href="/set_movies">Добавить фильм</a>
+</body>
+</html>
